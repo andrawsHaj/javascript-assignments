@@ -447,21 +447,16 @@ function tagClassics(books) {
   return books;
 }
 
-function getDystopianTitles(books) {
-for(let i=0; i<books.length;i++){
-  if(books[i].genres.includes("Dystopian")){
-    books[i].title=book[title];
-  }
-  return books.title.sort();
-}}
-console.log(getDystopianTitles(books));
+
 
 // Bonus: Dystopian Titles
 function getDystopianTitles(books) {
   const titles = [];
-  for (let book of books) {
-    if (book.genres.includes("Dystopian")) {
-      titles.push(book.title);
+  let index = 0;
+  for (let i = 0; i < books.length; i++) {
+    if (books[i].genres.includes("Dystopian")) {
+      titles[index] = books[i].title;
+      index++;
     }
   }
   return titles.sort();
