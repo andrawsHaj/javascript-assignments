@@ -29,8 +29,8 @@ description.classList.remove("hidden");
 
 // task 4
 
-const rogueItem = features[2];
-rogueItem.remove();
+const removeItem = features[2];
+removeItem.remove();
 
 
 
